@@ -173,12 +173,13 @@ body {
     padding: 40px;
     overflow-y: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .welcome-message {
     text-align: center;
+    margin-top: 80px;
 }
 
 .welcome-message h1 {
@@ -192,66 +193,381 @@ body {
     color: #666;
 }
 
-/* Lesson Content (shown on click) */
+/* Lesson Content */
 .lesson-content {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    padding-bottom: 60px;
 }
 
 .lesson-content h2 {
     font-size: 28px;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     padding-bottom: 12px;
     border-bottom: 3px solid #667eea;
+}
+
+.lesson-subtitle {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 30px;
+    margin-top: -5px;
 }
 
 .sections-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .section-card {
     background: white;
     border-radius: 12px;
-    padding: 24px 28px;
+    padding: 28px;
     border: 1px solid #e0e0e0;
     transition: all 0.2s ease;
 }
 
 .section-card:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
 }
 
 .section-header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .section-icon {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .section-header h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .theory-section .section-header h3 { color: #1565c0; }
 .practice-section .section-header h3 { color: #2e7d32; }
 .homework-section .section-header h3 { color: #e65100; }
 
-.section-card p {
-    color: #666;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 16px;
+/* Lesson intro */
+.lesson-intro {
+    background: linear-gradient(135deg, #eef0ff, #f8f9ff);
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
 }
 
+.lesson-intro p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Theory topic blocks */
+.theory-topic {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.theory-topic:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.theory-topic h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.theory-topic p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Tables */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 12px 0 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background: #f8f9ff;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table td:first-child {
+    font-weight: 600;
+    font-family: 'Segoe UI', monospace;
+    color: #667eea;
+}
+
+/* Compact table for declension */
+table.compact td, table.compact th {
+    padding: 8px 12px;
+}
+
+/* Grammar table */
+table.grammar-table th {
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+}
+
+table.grammar-table td:first-child {
+    font-weight: 600;
+    color: #1565c0;
+}
+
+/* Vocabulary table */
+table.vocab-table th {
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+}
+
+table.vocab-table td:first-child {
+    font-family: 'Segoe UI', monospace;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* Verb conjugation table */
+table.conj-table th {
+    background: linear-gradient(135deg, #7b1fa2, #9c27b0);
+}
+
+table.conj-table td:first-child {
+    font-weight: 600;
+    color: #7b1fa2;
+}
+
+/* Exercise blocks */
+.exercise-block {
+    background: #fafbfc;
+    border: 1px solid #e8e8ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.exercise-block:last-child {
+    margin-bottom: 0;
+}
+
+.exercise-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8e8ff;
+}
+
+.exercise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.exercise-list li {
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.exercise-list li:hover {
+    background: #f0f2ff;
+}
+
+.exercise-list li .litarhul-phrase {
+    font-weight: 600;
+    color: #667eea;
+    font-family: 'Segoe UI', monospace;
+}
+
+.exercise-list li .russian-phrase {
+    color: #888;
+    font-style: italic;
+}
+
+/* Gap fill exercise */
+.gap-fill {
+    margin: 12px 0;
+}
+
+.gap-fill-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    border-radius: 6px;
+}
+
+.gap-fill-item:hover {
+    background: #f0f2ff;
+}
+
+.gap-fill-item .hint {
+    color: #999;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.gap-fill-answer {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Segoe UI', monospace;
+    font-size: 14px;
+}
+
+/* Dialog block */
+.dialog {
+    background: #f8f9ff;
+    border: 1px solid #e8e8ff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 12px 0 16px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.dialog .line {
+    padding: 4px 0;
+}
+
+.dialog .speaker-a {
+    color: #1565c0;
+}
+
+.dialog .speaker-b {
+    color: #2e7d32;
+}
+
+.dialog .speaker-a::before {
+    content: "A: ";
+    font-weight: 700;
+}
+
+.dialog .speaker-b::before {
+    content: "B: ";
+    font-weight: 700;
+}
+
+.dialog-translation {
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Details / spoiler */
+.details-wrapper {
+    margin: 12px 0;
+}
+
+details {
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+details summary {
+    font-weight: 600;
+    color: #e65100;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+details[open] {
+    padding-bottom: 16px;
+}
+
+details .answers {
+    padding: 12px 0 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+}
+
+details .answers .answer-line {
+    padding: 2px 0;
+    font-weight: 500;
+    font-family: 'Segoe UI', monospace;
+    color: #2e7d32;
+}
+
+/* Vocabulary section */
+.vocab-category {
+    margin-bottom: 24px;
+}
+
+.vocab-category h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Section buttons */
 .section-btn {
     padding: 10px 24px;
     border: none;
@@ -260,6 +576,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    display: inline-block;
 }
 
 .theory-section .section-btn {
@@ -292,6 +609,72 @@ body {
     color: white;
 }
 
+/* Lesson objective highlight */
+.objective-box {
+    background: linear-gradient(135deg, #667eea15, #764ba215);
+    border: 1px solid #667eea40;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.objective-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Summary box */
+.summary-box {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0;
+}
+
+.summary-box h4 {
+    color: #2e7d32;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.summary-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary-box ul li {
+    padding: 4px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.summary-box ul li::before {
+    content: "✅ ";
+}
+
+/* Small info text */
+.info-note {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/* Lesson translation textarea */
+.translate-hint {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2e7d32;
+}
+
+/* Active lesson item */
 .lesson-item.active {
     background: #667eea;
     border-color: #667eea;
@@ -299,6 +682,108 @@ body {
 
 .lesson-item.active .lesson-title {
     color: white;
+}
+
+.lesson-item.active .section-tag {
+    opacity: 0.9;
+}
+
+/* Navigation arrows */
+.nav-arrows {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.nav-arrow {
+    padding: 10px 24px;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+    color: #667eea;
+}
+
+.nav-arrow:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.nav-arrow.prev-arrow {
+    border-color: #1565c0;
+    color: #1565c0;
+}
+
+.nav-arrow.prev-arrow:hover {
+    background: #1565c0;
+    color: white;
+}
+
+.nav-arrow.next-arrow {
+    border-color: #2e7d32;
+    color: #2e7d32;
+}
+
+.nav-arrow.next-arrow:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+/* Tab bar */
+.tab-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding: 4px;
+    background: #f0f2f5;
+    border-radius: 12px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+    color: #666;
+}
+
+.tab-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.tab-btn.theory-tab {
+    color: #1565c0;
+}
+
+.tab-btn.practice-tab {
+    color: #2e7d32;
+}
+
+.tab-btn.homework-tab {
+    color: #e65100;
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Scrollbar styling */
@@ -317,4 +802,21 @@ body {
 
 .left-nav::-webkit-scrollbar-thumb:hover {
     background: #aaa;
+}
+
+.content-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.content-area::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
 }
