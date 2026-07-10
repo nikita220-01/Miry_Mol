@@ -607,11 +607,321 @@ const lessonData = {
                 ["dobry", "добрый"]
             ]
         }
+    },
+    3: {
+        title: "Lesson 3: Jany hat iu denny zwyczaj",
+        subtitle: "Урок 3: Мой дом и повседневная жизнь",
+        objective: "Научиться описывать свой дом, говорить о мебели, повседневных действиях и правильно использовать множественное число существительных.",
+        summary: {
+            items: [
+                "Описывать дом и его части",
+                "Называть мебель",
+                "Использовать глаголы повседневной жизни",
+                "Правильно склонять прилагательные",
+                "Образовывать множественное число существительных: Им.п. мн.ч. = -i, Род.п. мн.ч. = -ia",
+                "Применять систему 4 форм существительных"
+            ],
+            vocabCount: "43 новых слова. Общий словарный запас: ~100 слов"
+        },
+        theory: {
+            topics: [
+                {
+                    title: "3.1 Дом и его части (Hat iu jony ćesci)",
+                    type: "vocab-table",
+                    headers: ["Łitarhul", "Русский"],
+                    rows: [
+                        ["hat", "дом"],
+                        ["pokoj", "комната"],
+                        ["dzwer", "дверь"],
+                        ["okn", "окно"],
+                        ["sten", "стена"],
+                        ["pod", "пол"],
+                        ["strop", "потолок"],
+                        ["dah", "крыша"],
+                        ["komin", "камин"],
+                        ["shod", "лестница"]
+                    ],
+                    note: "📌 Все существительные в именительном падеже имеют нулевое окончание!"
+                },
+                {
+                    title: "3.2 Мебель (Mebl)",
+                    type: "vocab-table",
+                    headers: ["Łitarhul", "Русский"],
+                    rows: [
+                        ["stol", "стол"],
+                        ["stolic", "стул"],
+                        ["lozk", "кровать"],
+                        ["śaf", "шкаф"],
+                        ["kanap", "диван"],
+                        ["kober", "ковёр"],
+                        ["zercal", "зеркало"],
+                        ["śwetic", "светильник"],
+                        ["poduśk", "подушка"],
+                        ["perin", "одеяло"]
+                    ]
+                },
+                {
+                    title: "3.3 Глаголы повседневной жизни (на -un)",
+                    type: "vocab-table",
+                    headers: ["Łitarhul", "Русский"],
+                    rows: [
+                        ["jenun", "кушать"],
+                        ["p'encikun", "пить"],
+                        ["śorkun", "спать"],
+                        ["ćytun", "читать"],
+                        ["p'isun", "писать"],
+                        ["hodun", "ходить"],
+                        ["stopun", "стоять"],
+                        ["sidun", "сидеть"],
+                        ["lezun", "лежать"],
+                        ["warun", "варить, готовить"],
+                        ["mycun", "мыть"],
+                        ["ćistun", "чистить"]
+                    ]
+                },
+                {
+                    title: "3.4 Прилагательные для описания (на -y)",
+                    type: "vocab-table",
+                    headers: ["Łitarhul", "Русский"],
+                    rows: [
+                        ["weły", "большой"],
+                        ["miły", "маленький"],
+                        ["dobry", "хороший"],
+                        ["ćepły", "тёплый"],
+                        ["zimny", "холодный"],
+                        ["zwety", "светлый"],
+                        ["tymny", "тёмный"],
+                        ["ćisty", "чистый"],
+                        ["brudny", "грязный"],
+                        ["nowy", "новый"],
+                        ["stary", "старый"]
+                    ]
+                },
+                {
+                    title: "3.5 Грамматика: Множественное число существительных",
+                    type: "text",
+                    content: '<p>В Łitarhul существительные склоняются по <strong>4 формам</strong>:</p><div class="table-wrapper"><table class="grammar-table"><thead><tr><th>Падеж</th><th>Ед. число</th><th>Мн. число</th></tr></thead><tbody><tr><td>Им.п. (кто? что?)</td><td>нулевое окончание</td><td><strong>-i</strong></td></tr><tr><td>Род.п. (кого? чего?)</td><td>-a</td><td><strong>-ia</strong></td></tr></tbody></table></div><p>📌 <strong>ВАЖНО:</strong> Прилагательные, согласующиеся с существительными во мн.ч., получают свои окончания по системе приоритетов (-y → -yi → -ya → -yia).</p>'
+                },
+                {
+                    title: "Таблица склонения",
+                    type: "grammar",
+                    intro: "",
+                    tables: [
+                        {
+                            subtitle: "",
+                            headers: ["Им.п. ед.ч.", "Род.п. ед.ч.", "Им.п. мн.ч.", "Род.п. мн.ч."],
+                            rows: [
+                                ["hat (дом)", "hata", "hati", "hatia"],
+                                ["pokoj (комната)", "pokoja", "pokoji", "pokojia"],
+                                ["stol (стол)", "stola", "stoli", "stolia"],
+                                ["okn (окно)", "okna", "okni", "oknia"],
+                                ["lozk (кровать)", "lozka", "lozki", "lozkia"],
+                                ["śaf (шкаф)", "śafa", "śafi", "śafia"]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: "3.6 Примеры предложений",
+                    type: "text",
+                    content: '<p><em>Jany hat jesciket weły.</em> — Мой дом большой.</p><p><em>Wu jona jesciket tryć\' pokojia.</em> — В нём три комнаты.</p><p><em>Jany pokoj jesciket miły, no ćepły.</em> — Моя комната маленькая, но тёплая.</p><p><em>Wu jona jesciket lozk, stol iu śaf.</em> — В ней есть кровать, стол и шкаф.</p><p><em>Jan kohen ćytun wu jany pokoj.</em> — Я люблю читать в своей комнате.</p><p><em>Weky majekem zwoh okni.</em> — У нас (есть) два окна.</p><p><em>Jony stoli jesciket nowy.</em> — Его столы новые. (мн.ч. Им.п.)</p>'
+                }
+            ]
+        },
+        practice: {
+            exercises: [
+                {
+                    title: "Упражнение 1: Переведите на Łitarhul",
+                    type: "list",
+                    items: [
+                        "Мой дом большой.",
+                        "В нём три комнаты.",
+                        "Моя комната тёплая.",
+                        "У меня есть кровать и шкаф.",
+                        "Я люблю читать.",
+                        "Наши окна светлые."
+                    ],
+                    answers: [
+                        "Jany hat jesciket weły.",
+                        "Wu jona jesciket tryć' pokojia.",
+                        "Jany pokoj jesciket ćepły.",
+                        "Jan majeken lozk iu śaf.",
+                        "Jan kohen ćytun.",
+                        "Weky okni jesciket zwety."
+                    ]
+                },
+                {
+                    title: "Упражнение 2: Поставьте существительное во множественное число (Им.п.)",
+                    type: "gap-fill",
+                    items: [
+                        { prompt: "hat →", answer: "hati" },
+                        { prompt: "pokoj →", answer: "pokoji" },
+                        { prompt: "stol →", answer: "stoli" },
+                        { prompt: "okn →", answer: "okni" },
+                        { prompt: "lozk →", answer: "lozki" },
+                        { prompt: "śaf →", answer: "śafi" }
+                    ]
+                },
+                {
+                    title: "Упражнение 3: Заполните пропуски",
+                    type: "gap-fill-with-hints",
+                    items: [
+                        { prompt: "Jany hat jesciket", hint: "(большой)", answer: "weły" },
+                        { prompt: "Wu jona jesciket tryć'", hint: "(комната — после числа)", answer: "pokojia" },
+                        { prompt: "Jany pokoj jesciket miły, no", hint: "(тёплый)", answer: "ćepły" },
+                        { prompt: "Wu jona jesciket lozk, stol iu", hint: "(шкаф)", answer: "śaf" },
+                        { prompt: "Jan", hint: "(любит) ćytun.", answer: "kohen" },
+                        { prompt: "Weky", hint: "(имеем) zwoh okni.", answer: "majekem" }
+                    ]
+                },
+                {
+                    title: "Упражнение 4: Диалог",
+                    type: "dialog",
+                    lines: [
+                        { speaker: "a", text: "Śel'we! Kaśe me spravi?" },
+                        { speaker: "b", text: "Dobre, delće! Jaky me duny hat?" },
+                        { speaker: "a", text: "Jany hat jesciket weły. Wu jona jesciket rah'n' pokojia." },
+                        { speaker: "b", text: "Jaky me duny pokoj?" },
+                        { speaker: "a", text: "Jany pokoj jesciket miły, no zwety. Wu jona jesciket lozk, stol iu śaf." },
+                        { speaker: "b", text: "Dobre! Kaśe me dun śorkun?" },
+                        { speaker: "a", text: "Jan śorken wu jany lozk. Mel'we!" },
+                        { speaker: "b", text: "Mel'we!" }
+                    ],
+                    translation: [
+                        "A: Привет! Как дела?",
+                        "B: Хорошо, спасибо! Какой у тебя дом?",
+                        "A: Мой дом большой. В нём четыре комнаты.",
+                        "B: Какая у тебя комната?",
+                        "A: Моя комната маленькая, но светлая. В ней есть кровать, стол и шкаф.",
+                        "B: Хорошо! Где ты спишь?",
+                        "A: Я сплю в своей кровати. Пока!",
+                        "B: Пока!"
+                    ]
+                },
+                {
+                    title: "Упражнение 5: Составьте предложения",
+                    type: "composition",
+                    words: "hat, pokoj, stol, lozk, okn, śaf, weły, miły, ćepły, zwety, ćisty, jany, wu, jescikun, majekun, iu",
+                    examples: [
+                        "Jany hat jesciket weły.",
+                        "Wu jona jesciket stol iu stolic.",
+                        "Jany okni jesciket zwety."
+                    ],
+                    task: "Составьте ещё 5 предложений!"
+                }
+            ]
+        },
+        homework: {
+            assignments: [
+                {
+                    title: "Задание 1: Опишите свой дом (8-12 предложений)",
+                    type: "composition-task",
+                    content: '<p>Используйте план:</p><ul><li>Приветствие</li><li>Размер дома (weły / miły)</li><li>Количество комнат</li><li>Описание своей комнаты</li><li>Мебель в ней</li><li>Что вы любите делать дома</li><li>Прощание</li></ul><p><strong>Пример:</strong></p><p><em>Śel\'we! Jany hat jesciket miły. Wu jona jesciket zwoh pokojia. Jany pokoj jesciket ćepły iu zwety. Wu jona jesciket lozk, stol iu śaf. Jan kohen ćytun iu śorkun wu jany hat. Mel\'we!</em></p>'
+                },
+                {
+                    title: "Задание 2: Выучите слова",
+                    type: "vocab-list",
+                    categories: [
+                        {
+                            name: "Дом (10 слов):",
+                            items: ["hat, pokoj, dzwer, okn, sten, pod, strop, dah, komin, shod"]
+                        },
+                        {
+                            name: "Мебель (10 слов):",
+                            items: ["stol, stolic, lozk, śaf, kanap, kober, zercal, śwetic, poduśk, perin"]
+                        },
+                        {
+                            name: "Глаголы (12 слов):",
+                            items: ["jenun, p'encikun, śorkun, ćytun, p'isun, hodun, stopun, sidun, lezun, warun, mycun, ćistun"]
+                        },
+                        {
+                            name: "Прилагательные (11 слов):",
+                            items: ["weły, miły, dobry, ćepły, zimny, zwety, tymny, ćisty, brudny, nowy, stary"]
+                        }
+                    ]
+                },
+                {
+                    title: "Задание 3: Просклоняйте существительные",
+                    type: "table-fill",
+                    headers: ["Им.п. ед.ч.", "Род.п. ед.ч.", "Им.п. мн.ч.", "Род.п. мн.ч."],
+                    rows: [
+                        ["hat", "_____", "_____", "_____"],
+                        ["pokoj", "_____", "_____", "_____"],
+                        ["stol", "_____", "_____", "_____"],
+                        ["okn", "_____", "_____", "_____"],
+                        ["śaf", "_____", "_____", "_____"]
+                    ],
+                    answers: ["hata, hati, hatia", "pokoja, pokoji, pokojia", "stola, stoli, stolia", "okna, okni, oknia", "śafa, śafi, śafia"]
+                },
+                {
+                    title: "Задание 4: Переведите текст",
+                    type: "translate",
+                    sourceText: "Привет! Меня зовут Никита. Мой дом большой и тёплый. В нём три комнаты. Моя комната маленькая, но светлая. В ней есть кровать, стол и шкаф. Я люблю читать и писать в своей комнате. У меня есть два окна. Пока!",
+                    answer: "Śel'we! Moj imej Nikita. Jany hat jesciket weły iu ćepły. Wu jona jesciket tryć' pokojia. Jany pokoj jesciket miły, no zwety. Wu jona jesciket lozk, stol iu śaf. Jan kohen ćytun iu p'isun wu jany pokoj. Jan majeken zwoh okni. Mel'we!"
+                },
+                {
+                    title: "Задание 5 (бонус): Придумайте историю",
+                    type: "composition-task",
+                    content: '<p>Составьте небольшой рассказ (10-15 предложений) о дне в вашем доме. Используйте:</p><ul><li>Глаголы настоящего времени (на -en, -et)</li><li>Прилагательные в разных формах (ед.ч., мн.ч.)</li><li>Существительные в разных падежах и числах</li><li>Союз iu</li></ul>'
+                }
+            ]
+        },
+        vocab: {
+            headers: ["Łitarhul", "Русский"],
+            rows: [
+                ["hat", "дом"],
+                ["pokoj", "комната"],
+                ["dzwer", "дверь"],
+                ["okn", "окно"],
+                ["sten", "стена"],
+                ["pod", "пол"],
+                ["strop", "потолок"],
+                ["dah", "крыша"],
+                ["komin", "камин"],
+                ["shod", "лестница"],
+                ["stol", "стол"],
+                ["stolic", "стул"],
+                ["lozk", "кровать"],
+                ["śaf", "шкаф"],
+                ["kanap", "диван"],
+                ["kober", "ковёр"],
+                ["zercal", "зеркало"],
+                ["śwetic", "светильник"],
+                ["poduśk", "подушка"],
+                ["perin", "одеяло"],
+                ["jenun", "кушать"],
+                ["p'encikun", "пить"],
+                ["śorkun", "спать"],
+                ["ćytun", "читать"],
+                ["p'isun", "писать"],
+                ["hodun", "ходить"],
+                ["stopun", "стоять"],
+                ["sidun", "сидеть"],
+                ["lezun", "лежать"],
+                ["warun", "варить"],
+                ["mycun", "мыть"],
+                ["ćistun", "чистить"],
+                ["weły", "большой"],
+                ["miły", "маленький"],
+                ["dobry", "хороший"],
+                ["ćepły", "тёплый"],
+                ["zimny", "холодный"],
+                ["zwety", "светлый"],
+                ["tymny", "тёмный"],
+                ["ćisty", "чистый"],
+                ["brudny", "грязный"],
+                ["nowy", "новый"],
+                ["stary", "старый"],
+                ["no", "но"]
+            ]
+        }
     }
 };
 
-// API base URL
-const API_BASE = 'http://localhost:3001/api';
+// Supabase configuration (from config.js or fallback)
+const SUPABASE_URL = (typeof MIRYMOL_CONFIG !== 'undefined') ? MIRYMOL_CONFIG.SUPABASE_URL : 'https://bkngtrjwqebgdugupgfy.supabase.co';
+const SUPABASE_KEY = (typeof MIRYMOL_CONFIG !== 'undefined') ? MIRYMOL_CONFIG.SUPABASE_ANON_KEY : 'sb_publishable_zz74bAuKTaN5tNhPYjwC6w_AcM3JkDL';
+const supabase = supabaseJs.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Auth state
 let currentUser = localStorage.getItem('mirymol-currentUser') || null;
@@ -621,9 +931,14 @@ let currentUserId = localStorage.getItem('mirymol-currentUserId') || null;
 async function getProgress() {
     if (!currentUserId) return {};
     try {
-        const res = await fetch(API_BASE + '/progress/' + currentUserId);
-        const data = await res.json();
-        return data.progress || {};
+        const { data, error } = await supabase
+            .from('progress')
+            .select('lesson_id')
+            .eq('user_id', currentUserId);
+        if (error) return {};
+        const progress = {};
+        data.forEach(function(r) { progress[r.lesson_id] = true; });
+        return progress;
     } catch (e) {
         return {};
     }
@@ -631,7 +946,9 @@ async function getProgress() {
 async function markLessonComplete(lessonId) {
     if (!currentUserId) return;
     try {
-        await fetch(API_BASE + '/progress/' + currentUserId + '/' + lessonId, { method: 'POST' });
+        await supabase
+            .from('progress')
+            .insert({ user_id: currentUserId, lesson_id: lessonId, completed: 1 }, { onConflict: 'user_id,lesson_id', ignoreDuplicates: true });
     } catch (e) {}
 }
 async function isLessonComplete(lessonId) {
@@ -708,13 +1025,13 @@ function applyTheme(themeName) {
     document.documentElement.style.setProperty('--text-secondary', theme.textSecondary);
     settings.theme = themeName;
     localStorage.setItem('mirymol-theme', themeName);
-    // Save to server if logged in
+    // Save to Supabase if logged in
     if (currentUserId) {
-        fetch(API_BASE + '/settings/' + currentUserId, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ showVocabTab: settings.showVocabTab, theme: themeName })
-        }).catch(function() {});
+        supabase.from('settings').upsert({
+            user_id: currentUserId,
+            show_vocab: settings.showVocabTab ? 1 : 0,
+            theme: themeName
+        }, { onConflict: 'user_id' }).catch(function() {});
     }
 }
 
@@ -739,6 +1056,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadSettings();
     renderAuthOverlay();
+
+    // Hamburger menu toggle for mobile
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', function() {
+            document.querySelector('.left-nav').classList.toggle('open');
+        });
+    }
+
+    // Close sidebar on lesson click (mobile)
+    lessonItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                document.querySelector('.left-nav').classList.remove('open');
+            }
+        });
+    });
 
     // Nav link click handlers
     navLinks.forEach(function(link) {
@@ -1207,39 +1541,60 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             try {
-                var res, data;
                 if (mode === 'register') {
-                    res = await fetch(API_BASE + '/register', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ username, password })
+                    // Register via Supabase Auth
+                    const { data, error } = await supabase.auth.signUp({
+                        email: username + '@placeholder.mirymol',
+                        password: password,
+                        options: { data: { username: username } }
                     });
-                    data = await res.json();
-                    if (!res.ok) {
-                        errorEl.textContent = data.error || 'Ошибка регистрации';
+                    if (error) {
+                        errorEl.textContent = 'Ошибка регистрации';
                         return;
                     }
+                    // Also insert into users table
+                    await supabase.from('users').insert({
+                        id: data.user.id,
+                        username: username,
+                        email: username + '@placeholder.mirymol'
+                    });
+                    currentUserId = data.user.id;
                 } else {
-                    res = await fetch(API_BASE + '/login', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ username, password })
-                    });
-                    data = await res.json();
-                    if (!res.ok) {
-                        errorEl.textContent = data.error || 'Неверное имя или пароль';
+                    // Login - check users table
+                    const { data, error } = await supabase
+                        .from('users')
+                        .select('id, username')
+                        .eq('username', username)
+                        .single();
+                    if (error || !data) {
+                        errorEl.textContent = 'Профиль не существует';
                         return;
                     }
+                    // Verify password via auth
+                    const { error: authError } = await supabase.auth.signInWithPassword({
+                        email: username + '@placeholder.mirymol',
+                        password: password
+                    });
+                    if (authError) {
+                        errorEl.textContent = 'Профиль не существует';
+                        return;
+                    }
+                    currentUserId = data.id;
                 }
                 currentUser = username;
-                currentUserId = data.id;
                 localStorage.setItem('mirymol-currentUser', currentUser);
                 localStorage.setItem('mirymol-currentUserId', currentUserId);
-                var sRes = await fetch(API_BASE + '/settings/' + currentUserId);
-                var sData = await sRes.json();
-                settings.showVocabTab = sData.showVocabTab;
-                settings.theme = sData.theme;
-                applyTheme(sData.theme);
+                // Load settings from Supabase
+                var { data: sData } = await supabase
+                    .from('settings')
+                    .select('show_vocab, theme')
+                    .eq('user_id', currentUserId)
+                    .single();
+                if (sData) {
+                    settings.showVocabTab = sData.show_vocab === 1 || sData.show_vocab === true;
+                    settings.theme = sData.theme || 'default';
+                    applyTheme(sData.theme || 'default');
+                }
                 renderAuthOverlay();
                 var dashLink = document.querySelector('.nav-link[data-page="dashboard"]');
                 if (dashLink) dashLink.click();
@@ -1378,13 +1733,13 @@ document.addEventListener('DOMContentLoaded', function() {
             vocabToggle.addEventListener('change', function() {
                 settings.showVocabTab = this.checked;
                 localStorage.setItem('mirymol-showVocab', settings.showVocabTab);
-                // Save to server if logged in
+                // Save to Supabase if logged in
                 if (currentUserId) {
-                    fetch(API_BASE + '/settings/' + currentUserId, {
-                        method: 'PUT',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ showVocabTab: settings.showVocabTab, theme: settings.theme })
-                    }).catch(function() {});
+                    supabase.from('settings').upsert({
+                        user_id: currentUserId,
+                        show_vocab: settings.showVocabTab ? 1 : 0,
+                        theme: settings.theme
+                    }, { onConflict: 'user_id' }).catch(function() {});
                 }
             });
         }
